@@ -20,7 +20,6 @@ The goal of *Shop Small* is to help small business owners in Tunisia gain visibi
 - **Frontend:** HTML5, CSS3, JavaScript
 - **Backend:** PHP
 - **Database:** MySQL
-- **Hosting:** (Add your hosting details here if applicable)
 
 ## 🧑‍💼 How It Works
 
