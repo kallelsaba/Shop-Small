@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Jost", sans-serif; /*le font d'apres google*/
+    list-style: none;
+    text-decoration: none;
+}
+                                  /*dans header*/
+header{
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+}
+
+/*le logo*/
+.logo img{
+    max-width: 300px;
+    height: auto;
+}
+
+.navmenu{
+    display: flex; /*pour alligner "home", "categories" et "add"*/
+}
+
+.navmenu a{
+    color: #2c2c2c;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+
+/*pour que lorque le souris est sur "home", "categories" ou "add" sa couleur devient rouge*/
+.navmenu a:hover{
+    color: red;
+}
+
+/*pour les icones*/
+.nav-icon{
+    display: flex;
+    align-items: center;
+}
+
+.nav-icon i{
+    margin-right: 20px;
+    color: #2c2c2c;
+    font-size: 25px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+
+.nav-icon i:hover{
+    transform: scale(1.1); /*comme un zoom*/
+    color: red;
+}
+/*
+#menu-icon{
+    font-size: 35px;
+    color: #2c2c2c;
+    z-index: 10001;
+    cursor: pointer;
+}*/
+
+                                  /*dans section*/
+section{
+    padding: 5% 10%;
+}
+
+.cat-list{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    display: flex; /*pour l'allignement*/
+    position: relative;
+}
+
+.cat {
+    background: url("bgnav.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.cat-list li{
+    list-style: none;
+}
+
+.cat-list a{
+    color: black;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 1000;
+}
+
+.prod{
+    padding-top: 0%;
+}
+
+.prod h2{
+    margin-bottom: 5%;
+}
+
+.profile{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    gap: 2rem;
+}
+
+.row{
+    position: relative;
+    transition: all .40s;
+}
+
+.row img{
+    width: 100%;
+    height: auto;
+    transition: all .40s;
+}
+
+.row img:hover{
+    transform: scale(0.9);
+}
+

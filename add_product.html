@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add</title>
+
+    <link rel="stylesheet" href="stylecat.css">
+    <!--google fonts: jost-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--cdnjs: font-awsome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--boxicons-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <style>
+        body {
+        font-family: 'Jost', sans-serif; /* Use Google Font */
+        margin: 0;
+        padding: 0;
+        background-image: url('addphoto2.jpg'); /* Replace 'background.jpg' with your image path */
+        background-size: cover;
+        background-position: center;
+        /*color: #E19FAE; /*Text color */
+        }
+
+        h2 {
+            color: #CC1D60;
+            margin-top: 50px; /* Adjust margin as needed */
+        }
+
+        form {
+            margin-top: 20px; /* Adjust margin as needed */
+        }
+
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        input[type="text"],
+        input[type="url"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #E19FAE;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 20px;
+            background-color: #CC1D60;
+            color: #E19FAE;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #E19FAE;
+            color: #CC1D60;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <a href="shopsmall.html" class="logo"><img src="logo.png" alt=""></a>
+        <ul class="navmenu">
+            <li><a href="shopsmall.html">home</a></li>
+            <li><a href="categories.html">categories</a></li>
+            <li><a href="add_product.html">add</a></li>
+        </ul>
+
+        <div class="nav-icon">
+            <!--boxicons: search/user/cart + font-->
+            <!--<a href="#"><i class='bx bx-search'></i></a>-->
+            Join us: <br> 
+            <a href="register.php"><i class='bx bx-user'></i></a>
+            <!--<a href="#"><i class='bx bx-cart' ></i></a>-->
+            <!--pour l'icone de menu-->
+            <!--<div class="bx bx-menu" id="menu-icon"></div>-->
+        </div>
+    </header>
+
+    <center>
+        <h2>In your local scene, let them gleam, add a small business, and fulfill a dream</h2><br>
+        <form action="PHP_add_product.php" method="POST">
+            <table>
+                <tr>
+                    <td><label for="name">Name: </label></td>
+                    <td><input type="text" name="name"></td>
+                </tr>
+                <tr>
+                    <td><label for="link">Instagram Link: </label></td>
+                    <td><input type="url" name="link"></td>
+                </tr>
+                <tr>
+                    <td><label for="cat">Categorie: </label></td>
+                    <td>
+                        <select name="cat" id="cat">
+                            <option value="">Select a category</option>
+                            <option value="Jewelry">Jewelry</option>
+                            <option value="Paintings">Paintings</option>
+                            <option value="Pastry">Pastry</option>
+                            <option value="Journals">Journals</option>
+                            <option value="Clay">Clay</option>
+                            <option value="Macrame">Macrame</option>
+                            <option value="Candles">Candles</option>
+                            <option value="Others">Others</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="comments">Decription: </label></td>
+                    <td><textarea id="comments" name="comments" rows="4" cols="50"></textarea></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" name=B1 value='Add'></td>
+                    <td><input type="reset" name=B2 value="Reset"></td>
+                </tr>
+            </table>
+        </form>
+    </center>
+
+</body>
+</html>
