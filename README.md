@@ -11,7 +11,7 @@ The goal of *Shop Small* is to help small business owners in Tunisia gain visibi
 - 📋 Admin-managed submission system for business owners to send their information.
 - 📁 Categorized display of Tunisian small businesses.
 - 🔗 Direct link to each business’s **Instagram** page.
-- 🔎 Easy navigation by business type (e.g., fashion, crafts, food, beauty, etc.).
+- 🔎 Easy navigation by business category.
 - 🎨 Clean and responsive front-end built with HTML, CSS, and JavaScript.
 - 🗄️ Backend powered by PHP and SQL to manage data and business listings.
 
